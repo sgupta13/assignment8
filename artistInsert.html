@@ -1,0 +1,36 @@
+<?php	
+   session_start();
+   include("config.php");
+?>
+<html>
+
+<head>
+<title>Artist Information</title>
+<link rel="stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+<h1>Insert Artist Information</h1>
+
+<body id="body-color">
+<div id="Insert">
+<CENTER>
+<fieldset style="width:30%"><legend>You may enter Artist information below: </Legend>
+<h3>Artist Entry</h3>
+<form action="insertartist.php" method="post">
+
+Artist First Name: <br><input type="text" name="afname" size="15"><br>
+<p></p>
+
+Artist Last Name: <br><input type="text" name="alname" size="15"><br>
+<p></p>
+
+<input id="button" type="submit" name="submit" value="Submit">
+<p></p>
+<h3>Navigation</h3>
+<h3><a href="http://codd.cs.gsu.edu/~sgupta13/assignment8/albumInsert.html">Want to add an Album?</a></h3>
+<h3><a href="http://codd.cs.gsu.edu/~sgupta13/assignment8/searchDatabase.html">Want to search Database?</a></h3>
+</CENTER>
+</form>
+</body>
+</html>
